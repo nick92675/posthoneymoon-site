@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://feeds.artistdata.com/_css/shows.xsd">
+   <show>
+      <recordKey>SWTZ-TD-6862862F01025223</recordKey>
+      <name><![CDATA[Big Dipper * Sunken Ships * Post Honeymoon]]></name>
+      <city><![CDATA[Chicago]]></city>
+      <venueName><![CDATA[Bottom Lounge]]></venueName>
+      <venueNameExt />
+      <showType><![CDATA[Club/Casino/Arena Show]]></showType>
+      <venueZip />
+      <venuePhone />
+      <venueAddress><![CDATA[1375 West Lake Street]]></venueAddress>
+      <ticketURI><![CDATA[http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&eventId=3367234]]></ticketURI>
+      <description />
+      <ageLimit>17+</ageLimit>
+      <venueURI><![CDATA[http://www.bottomlounge.com/]]></venueURI>
+      <ticketPrice><![CDATA[16]]></ticketPrice>
+      <date>2013-03-23</date>
+      <timeSet>20:00:00.0000000</timeSet>
+      <gmtDate>2013-03-24 01:00:00</gmtDate>
+      <showtimeZone>America/Chicago</showtimeZone>
+      <timeDoors />
+      <directLink />
+      <posterImage />
+      <lastUpdate>2013-03-04 14:24:07</lastUpdate>
+      <stateAbbreviation>IL</stateAbbreviation>
+      <state>Illinois</state>
+      <countryAbbreviation>US</countryAbbreviation>
+      <country>United States</country>
+      <timeZone>America/Chicago</timeZone>
+      <deposit>No Deposit</deposit>
+      <depositReceived><![CDATA[0.00]]></depositReceived>
+      <otherArtists>
+         <name><![CDATA[Sunken Ships]]></name>
+         <uri />
+         <timeSet />
+      </otherArtists>
+      <otherArtists>
+         <name><![CDATA[Big Dipper]]></name>
+         <uri />
+         <timeSet />
+      </otherArtists>
+      <artistname><![CDATA[Post Honeymoon]]></artistname>
+      <artistKey>AR-ULVNXTUWEI9D9CPY</artistKey>
+   </show>
+</shows>
