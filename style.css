@@ -1,0 +1,50 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 23:12:40 Jan 16, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 2:36:17 Mar 5, 2013.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+body {
+	font-family: Georgia, Times, serif;
+	font-size: 35px;
+	background-color: #333;
+	color: #333;
+}
+p { }
+
+#container {
+	width: 650px;
+	margin: 0px auto;
+	background-color: white;
+	padding: 20px
+}
+
+
+#secondarynav a { font-size: 18px; line-height: 10px;}
+
+#promotables { font-size: 18px; }
+#content { font-size: 18px; }
+#promotables p { margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;  }
+
+.bigtitles { font-size: 35px;  font-weight: bold; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;  }
+.titles { font-size: 25px; font-weight: bold; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;  }
+
+
+a {
+color: #5B92D6;
+}
+a:hover {
+color: white;
+background-color: #5B92D6; 
+}
+
+h1 {
+	font-family:  Georgia, Times, serif;
+}
