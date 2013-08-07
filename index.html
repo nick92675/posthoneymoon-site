@@ -15,6 +15,27 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bigvideo.css">
     <link rel="author" href=""/>
+
+
+
+        <!-- styles needed by jScrollPane - include in your own sites -->
+        <link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+
+        
+
+        <!-- latest jQuery direct from google's CDN -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <!-- the mousewheel plugin -->
+        <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+        <!-- the jScrollPane script -->
+        <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+        <!-- scripts specific to this demo site -->
+        <script type="text/javascript" src="js/demo.js"></script>
+
+        <script type="text/javascript" id="sourcecode">
+            // No page specific javascript - see the sourcecode of the loaded content instead
+        </script>
+
 </head>
 <body>
 
@@ -36,14 +57,11 @@
         <a href="http://posthoneymoon.bandcamp.com/" class="social">Bandcamp</a>
         <a href="http://www.itunes.com/posthoneymoon" class="social">iTunes</a>
         <a href="http://www.twitter.com/posthoneymoon" class="social">Twitter</a>
+        <a href="http://posthoneymoon.tumblr.com" class="social">Tumblr</a>
         </p>
 
 
 
-        
-        <div class="toggle-btn">
-            <label><input type="checkbox" checked id="video-toggle" /> Video Playing</label>
-        </div>
     </div>
 
     <div class="main">
@@ -51,11 +69,20 @@
         <div id="bio" class="box">
             <h1>Bio</h1>
 
-            <p>Post Honeymoon's roots go back to a summer night in 2001, when drummer Nick Kraska met keyboardist Rachel Shindelman (both ex-Bang! Bang!, New Black) and brought her to a show at the Empty Bottle.</p>
+            <p>On sophomore record, <b>Second Skin, Nick and Rachel Kraska</b> eschew guitars in favor of hip-hop and dub arrangements that are seamlessly swirled with Rachel’s classic keyboard licks and Nick’s hard hits of the kit. Think Hammond organ, Clavichord and Melotron over Timbaland-meets-James-Murphy MPC grooves steered by primal drumming.</p>
 
-            <p>It took them three years to start playing together and another three to get married, go on their first vacation and start their own outfit, the aptly named Post Honeymoon.</p>
+            <p>Though stark a sonic departure from the band’s sparse, haunting 2009 S/T debut, <b>Second Skin</b> continues to traverse dark topics, as heard on the album’s debut single, <b>Kid With a Gun</b>, written days after the tragic Newtown school shootings. Be sure to check out the video for <b>Kid With a Gun</b> (feel free to post and share). </p>
 
-            <p>Post Honeymoon strips bare and slows down the pop songs Kraska and Shindelman perfected while playing in other outfits. What's left are the kind of songs you dream up when you think nobody else is listening. Think Siouxsie Sioux meets the Motels, meets Love & Rockets (without the guitars).</p> 
+
+<iframe src="http://player.vimeo.com/video/69136230" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/69136230">Post Honeymoon - Kid With a Gun (Official Video)</a> from <a href="http://vimeo.com/posthoneymoon">Post Honeymoon</a> on <a href="https://vimeo.com">Vimeo</a>.
+
+                <p>Though many of the record’s lyrical themes explore the pair’s fascination with facades and disguises, double lives, hidden powers and dirty secrets, there’s also a sense of hope and fun peeking its way through the clouds, such as a come-hither love song, The Hunter, and a tongue-in-cheek anthem about being kidnapped by aliens, Communion.</p>
+
+            <p>Recorded and produced in just eight days with the venerable <b>Bill Skibbe</b> (Wild Belle, The Kills, Fiery Furnaces), <b>Second Skin</b> is a nine-song collection that ultimately broke every rule the duo had set for itself, and the pair is all the better for it.</p>
+
+            <p>For fans of: Yeah Yeah Yeahs, Sharon Van Etten, the Kills, Metric, Nick Cave, Grimes, Local Natives, Austra, Bat for Lashes, Anika</p>
+
+            
 
 
         </div>
@@ -70,7 +97,7 @@
 
             <h2>Past Shows</h2>
 
-            <iframe src='http://feeds.artistdata.com/iframe.shows/artist/AR-ULVNXTUWEI9D9CPY/iframe/past' height='300' width='650' frameborder='no' allowtransparency="true"></iframe>
+            <iframe src='http://feeds.artistdata.com/iframe.shows/artist/AR-ULVNXTUWEI9D9CPY/iframe/past' height='300' width='700' frameborder='no' allowtransparency="true"></iframe>
 
             
 
@@ -194,11 +221,12 @@
 
 
         // messing around w/parsing xml but not there yet
+       /*
         $(document).ready(function()
         {
           $.ajax({
             type: "GET",
-            url: "data/shows.xml",
+            url: "http://feeds.artistdata.com/xml.shows/artist/AR-ULVNXTUWEI9D9CPY/xml/future",
             // real feed sources for future ref - shows.xml is local in same format as response
             //http://feeds.artistdata.com/xml.shows/artist/AR-ULVNXTUWEI9D9CPY/xml/future
             //http://feeds.artistdata.com/xml.shows/artist/AR-ULVNXTUWEI9D9CPY/xml/past
@@ -216,23 +244,23 @@
 //output shows
 $(xml).find("show").each(function()
 {
-  $("#output").append("<h3>" + $(this).find("date").text() + "</h3><p><a href=" + $(this).find("venueURI").text() + ">" + $(this).find("name").first().text() + "@" + $(this).find("venueName").text() + "</a></p><p>" + $(this).find("venueAddress").text().trim() + ", " + $(this).find("city").text().trim() + ", " + $(this).find("state").text().trim() + " (" + $(this).find("country").text().trim() + ") <a target='_new' href='http://maps.google.com/maps?q=" + $(this).find("venueAddress").text().trim() + ", " + $(this).find("city").text().trim() + ", " + $(this).find("state").text().trim() + "'>Map</a> </p>" );
+    $("#output").append("<h3>" + $(this).find("date").text() + "</h3>");
+    $("#output").append("<p><a href='" + $(this).find("venueURI").text() + "'>" + $(this).find("name").first().text() + " @ " + $(this).find("venueName").text() + "</a></p>");
+    $("#output").append("<p>" + $(this).find("venueAddress").text().trim() + ", " + $(this).find("city").text().trim() + ", " + $(this).find("state").text().trim() + " (" + $(this).find("country").text().trim() + ") <a target='_new' href='http://maps.google.com/maps?q=" + $(this).find("venueAddress").text().trim() + ", " + $(this).find("city").text().trim() + ", " + $(this).find("state").text().trim() + "'>Map</a> </p>" );
 
-  $("#output").append("<p>Also Playing: "); 
+  $("#output").append(); 
       $(this).find("otherArtists").each(function()
       {
-        $("#output").append($(this).text() + "<br />");
+        $("#output").append($(this).text());
       });
   
-  $("#output").append("</p>"); 
 
-
-  $("#output").append("<br />");
 });
 
 
 
 }
+*/
 
 
 
